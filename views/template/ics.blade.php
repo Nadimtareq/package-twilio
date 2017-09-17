@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:UWVoordeelpas
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:{{ str_random(20) }}
+DTSTART:{{ $startdate }}
+SEQUENCE:0
+TRANSP:OPAQUE
+DTEND:{{ $enddate }}
+LOCATION:{{ $location }}
+SUMMARY:{{ $title }}
+CLASS:PUBLIC
+DESCRIPTION:{{ $description }}
+DTSTAMP:{{  $todaydate }}
+END:VEVENT
+END:VCALENDAR
